@@ -1,0 +1,14 @@
+[
+{
+  "directory": "E:/!cpp/test1/build",
+  "command": "D:\\msys2\\ucrt64\\bin\\g++.exe -IE:/!cpp/test1/server/../server/include -g -o server\\CMakeFiles\\server_app.dir\\src\\server_main.obj -c E:\\!cpp\\test1\\server\\src\\server_main.cpp",
+  "file": "E:\\!cpp\\test1\\server\\src\\server_main.cpp",
+  "output": "server\\CMakeFiles\\server_app.dir\\src\\server_main.obj"
+},
+{
+  "directory": "E:/!cpp/test1/build",
+  "command": "D:\\msys2\\ucrt64\\bin\\g++.exe -IE:/!cpp/test1/server/../server/include -g -o server\\CMakeFiles\\server_app.dir\\src\\student_data.obj -c E:\\!cpp\\test1\\server\\src\\student_data.cpp",
+  "file": "E:\\!cpp\\test1\\server\\src\\student_data.cpp",
+  "output": "server\\CMakeFiles\\server_app.dir\\src\\student_data.obj"
+}
+]
