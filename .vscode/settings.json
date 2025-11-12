@@ -51,6 +51,7 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "cstring": "cpp",
-        "print": "cpp"
+        "print": "cpp",
+        "cstdarg": "cpp"
     }
 }
