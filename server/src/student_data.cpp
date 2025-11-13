@@ -1,7 +1,14 @@
 #include "student_data.h"
 
 ProcessData::ProcessData(const std::string& filename_1, const std::string& filename_2){
-    
+    /**
+     * @brief Класс ProcessData обарабатывает данные студентов.
+     *
+     * Обрабатывает 2 файла, убирая повторы, сортируя получившийся результат и нумерая его заного.
+     * @param Принимает 2 параметры filename_1 (string) и filename_2 (string),
+     * Два пути к файлам с данными студентов для обработки.
+     * @throws Исключение открытия файлов.
+     */
     file_1 = std::make_unique<std::ifstream>(filename_1);
     file_2 = std::make_unique<std::ifstream>(filename_2);
     std::string error_text = "";
@@ -18,6 +25,13 @@ ProcessData::ProcessData(const std::string& filename_1, const std::string& filen
 }
 
 std::vector<std::string> ProcessData::get_data(){
+    /**
+     * @brief Метод класса ProcessData осуществляет обработку данных.
+     *
+     * Обрабатывает 2 файла, убирая повторы, сортируя получившийся результат и нумерая его заного.
+     * @return Возвращает vector<string> с обработанными даннами о студентах.
+     * @throws Исключения пустых файлов.
+     */
     std::vector<std::string> students;
     std::string line;
     std::string new_line;

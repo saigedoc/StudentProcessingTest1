@@ -2,6 +2,12 @@
 #include <zmq.hpp>
 
 int main() {
+    /**
+     * @brief Основная функция, осуществляет создание клиента и его обработку.
+     *
+     * Подключается к серверу на tcp://localhost:88888.
+     * Получает обработанные данные от сервера и выводит.
+     */
     zmq::context_t ctx;
     zmq::socket_t client(ctx, ZMQ_REQ);
     client.connect("tcp://localhost:88888");

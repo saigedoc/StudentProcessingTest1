@@ -3,6 +3,13 @@
 #include <zmq.hpp>
 
 int main() {
+    /**
+     * @brief Основная функция, осуществляет создание сервера и его обработку.
+     *
+     * Создаёт сервер на tcp://localhost:88888, вызывает объект класса ProcessData.
+     * Получает обработанные данные методом get_data класса ProcessData.
+     * Отправляет полученные данные клиентам.
+     */
     try {
         zmq::context_t ctx;
         zmq::socket_t server(ctx, ZMQ_REP);
