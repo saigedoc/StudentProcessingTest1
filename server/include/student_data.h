@@ -13,23 +13,11 @@
 #include <cstring> // Для std::strerror
 class ProcessData {
 private:
-    // Внутренняя реализация: smart pointer для автоматического закрытия файла
-    //std::unique_ptr<std::ifstream, decltype(&std::fclose)> file_1 = std::make_unique<std::ifstream>;
     std::unique_ptr<std::ifstream> file_1;
     std::unique_ptr<std::ifstream> file_2;
-
-    // Метод для чтения строки из файла (const-correctness)
-    //std::string read_line() const;
-
 public:
-    // Конструктор: открывает файл, бросает исключение при ошибке
     explicit ProcessData(const std::string& filename_1, const std::string& filename_2);
-
-    // Деструктор: автоматически закрывает файл (RAII)
-    //~ProcessData() = default;  // unique_ptr сам вызовет fclose
-
     std::vector<std::string> get_data();
-    
 };
 
 #endif
